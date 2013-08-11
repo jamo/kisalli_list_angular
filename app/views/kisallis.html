@@ -1,0 +1,71 @@
+<div class="table-hover table table-striped">
+	<table>
+	  <caption>Kisällikokelaat</caption>
+	  <thead>
+	    <tr>
+	      <th>Nimi</th>
+        <th>opnro</th>
+        <th>ka</th>
+        <th>opintopisteitä</th>
+        <th>Kisalli ohpe </th>
+        <th>Kisalli ohja </th>
+        <th>Ohjaaja ohpe</th>
+        <th>oOhjaaja ohja</th>
+        <th>voin ohjata</th>
+        <th>ohpe</th>
+        <th>ohja</th>
+        <th>tira-paja</th>
+        <th>tira-laskarit</th>
+        <th>lapio</th>
+        <th>c</th>
+        <th>tikape</th>
+        <th>tito</th>
+        <th>miksi sina</th>
+        <th>MitaOdotat</th>
+        <th>Muuta</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+    <script type="text/ng-template" id="popover">
+      popover: {
+        "content": "asd"
+        "title": "asd"
+      }
+    </script>
+	    <tr ng-repeat="kisalli in kisallis">
+        <td>{{ kisalli.name }}</td>
+        <td>{{ kisalli.opnro }}</td>
+        <td>{{ kisalli.opintojen_ka }}</td>
+        <td>{{ kisalli.opintopisteita }}</td>
+        <td>{{ kisalli.ohpes }}</td>
+        <td>{{ kisalli.ohjas }}</td>
+        <td>{{ kisalli.syksyOhpeOhjaaja }}</td>
+        <td>{{ kisalli.syksyOhjaOhjaaja }}</td>
+        <td>voin ohjata:</td>
+        <td>{{ kisalli.ohpe }}</td>
+        <td>{{ kisalli.ohja }}</td>
+        <td>{{ kisalli.tira }}</td>
+        <td>{{ kisalli.tiralaskarit }}</td>
+        <td>{{ kisalli.lapio }}</td>
+        <td>{{ kisalli.c }}</td>
+        <td>{{ kisalli.tikape }}</td>
+        <td>{{ kisalli.tito }}</td>
+        <td>
+          <button  class="btn btn-default" popover="{{ kisalli.miksiSina }}" popover-title="MiksiSina">
+            tekstiä
+          </button>
+        </td>
+        <td>
+          <button  class="btn btn-default" popover="{{ kisalli.mitaOdotat }}" popover-title="MitaOdotat">
+            tekstiä
+          </button>
+        </td>
+        <td><button  class="btn btn-default" popover="{{ kisalli.muuta }}" popover-title="Muuta?">
+            tekstiä
+          </button></td>
+        <td>{{ kisalli. }}</td>
+	    </tr>
+	  </tbody>
+	</table>
+
+</div>
